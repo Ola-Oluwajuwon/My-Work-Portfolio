@@ -584,6 +584,7 @@ section.project-container #noble {
   width: 90%;
   margin: 0 auto;
   height: 50vh;
+  max-height: 280px;
   object-fit: cover;
 }
 .project-cards .to-center-elements {
