@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Dummy CV - Jaydroid</title>
+    <script
+      src="https://kit.fontawesome.com/fbc1092ab7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jquery-3.6.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <link rel="stylesheet" href="aboutMePage.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="page-logo">
+        <p>
+          <a href="#" id="letter-color"
+            ><span>j</span><span>a</span><span>y</span><span>d</span
+            ><span>r</span><span>o</span><span>i</span><span>d</span></a
+          >
+        </p>
+      </div>
+      <nav id="head-nav">
+        <ul>
+          <li>
+            <a href="#here" id="showModal">Home</a>
+          </li>
+          <li><a href="#here">Blog</a></li>
+          <li id="sub-list-parent">
+            <a href="#here">Projects</a>
+          </li>
+          <li><a href="#here">About</a></li>
+          <!-- Tackle this later for change of pagez color theme -->
+          <!-- <li>
+            <button>
+              <i class="fa fa-sun"></i> <i class="fa fa-moon"></i>
+            </button>
+            <button>
+              <i class="fa fa-bars"></i> <i class="fa fa-close"></i>
+            </button>
+          </li> -->
+        </ul>
+      </nav>
+      <div class="page-menu-tag" id="full-display">
+        <button id="btn">
+          <!-- <i class="fa fa-bars"></i> -->
+          <div class="parent-for-burger-nav">
+            <span class="kid-for-burger-nav piece-one"></span>
+            <span class="kid-for-burger-nav for-background piece-two"></span>
+            <span class="kid-for-burger-nav for-background piece-three"></span>
+            <div class="toggle-sm-nav-links"></div>
+          </div>
+        </button>
+
+        <ul class="toggle-sm-nav-links" id="simpleDropdown">
+          <li><a href="#here">Home</a></li>
+          <li><a href="#here">Blog</a></li>
+          <li><a href="#here">Projects</a></li>
+          <li><a href="#here">About</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="big-modal-container">
+      <div class="modal-container">
+        <h2>The page you seek does not exist</h2>
+        <p>
+          This entire project is to showcase that the developer is an
+          experienced Front End Developer; it's just a dummy website. He has a
+          fully functional and deployed work porfolio, though, at this link:
+          <a href="www.jaydroid.com">Visit Him</a>. But hey, thanks for your
+          time.
+        </p>
+
+        <button id="float-me">Close</button>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="for-grid">
+        <section class="section" style="height: min-content; padding: 0">
+          <div class="image-wrapper">
+            <img src="./aloha_avatar_of_me.png" alt="" />
+            <h2>Jaydroid</h2>
+          </div>
+
+          <div class="address text-color">
+            <p><i class="fa fa-user-tie"></i><span>Web Developer</span></p>
+            <p>
+              <i class="fa-solid fa-location-dot"></i><span>Remote, Cloud</span>
+            </p>
+            <a href="mailto:okayode986@stu.ui.edu.ng" id="responsive-anchor">
+              <i class="fa fa-envelope"></i
+              ><span>kayodeoluwajuwon@gmail.com</span>
+            </a>
+            <a href="tel:+234-808-121-9906"
+              ><i class="fa fa-phone"></i><span>08081219906</span></a
+            >
+          </div>
+
+          <div class="skills">
+            <h3 class="text-color"><i class="fa fa-splotch"></i>Skills</h3>
+            <p><i class="fa-brands fa-html5"></i>HTML5</p>
+            <p><i class="fa-brands fa-css3"></i>CSS3</p>
+            <p><i class="fa-brands fa-js"></i>JavaScript</p>
+            <p><i class="fa-brands fa-j"></i>jQuery</p>
+            <p><i class="fa-brands fa-git-alt"></i>Git</p>
+          </div>
+
+          <div class="languages">
+            <h3 class="text-color">
+              <i class="fa fa-earth-africa"></i>Languages
+            </h3>
+            <p><i class="fa fa-language"></i>English</p>
+            <p><i class="fa fa-language"></i>French</p>
+            <p><i class="fa fa-language"></i>Yoruba</p>
+          </div>
+        </section>
+
+        <div class="flex-section">
+          <section class="section cat-2">
+            <h2 class="text-color">
+              <i class="fa fa-university"></i>Work Experience
+            </h2>
+
+            <div class="container-for-blog">
+              <h3 class="text-color">Front End Developer / indeed.com</h3>
+              <p>
+                <i class="fa-solid fa-calendar-days"></i>Jan 2021 -
+                <span>Current</span>
+              </p>
+              <p class="change-line-height">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                voluptate nulla cum laudantium quis laboriosam voluptatem
+                suscipit quibusdam ad tenetur illum ducimus obcaecati itaque,
+                sint autem cupiditate! Nemo, tempore modi.
+              </p>
+            </div>
+
+            <div class="container-for-blog">
+              <h3 class="text-color">Web Developer / upwork.com</h3>
+              <p>
+                <i class="fa-solid fa-calendar-days"></i>Jan 2021 -
+                <span>Current</span>
+              </p>
+              <p class="change-line-height">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                voluptate nulla cum laudantium quis laboriosam voluptatem
+                suscipit quibusdam ad tenetur illum ducimus obcaecati itaque,
+                sint autem cupiditate! Nemo, tempore modi.
+              </p>
+            </div>
+
+            <div class="container-for-blog">
+              <h3 class="text-color">Web Designer / fiverr.com</h3>
+              <p>
+                <i class="fa-solid fa-calendar-days"></i>Jan 2021 -
+                <span>Current</span>
+              </p>
+              <p class="change-line-height">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                voluptate nulla cum laudantium quis laboriosam voluptatem
+                suscipit quibusdam ad tenetur illum ducimus obcaecati itaque,
+                sint autem cupiditate! Nemo, tempore modi.
+              </p>
+            </div>
+          </section>
+
+          <section class="section cat-2">
+            <h2 class="text-color">
+              <i class="fa fa-certificate"></i>Education
+            </h2>
+
+            <div class="div-for-education">
+              <h3 class="text-color"><i class="fa fa-w"></i>W3Schools.com</h3>
+              <span><i class="fa-solid fa-calendar-days"></i>Certified</span>
+              <p>Web Developement! All I need to know in one place</p>
+            </div>
+
+            <div class="div-for-education">
+              <h3 class="text-color">
+                <i class="fa fa-award"></i>SoloLearn.com
+              </h3>
+              <span><i class="fa-solid fa-calendar-days"></i>Certified</span>
+              <p>Five Certificates Earned</p>
+              <p><i class="fa-solid fa-ribbon"></i>HTML5</p>
+              <p><i class="fa-solid fa-ribbon"></i>CSS3</p>
+              <p><i class="fa-solid fa-ribbon"></i>JavaScript</p>
+              <p><i class="fa-solid fa-ribbon"></i>jQuery</p>
+              <p><i class="fa-solid fa-ribbon"></i>Responsive Web Design</p>
+              <p>
+                <i class="fa-solid fa-ribbon"></i>Web Developement Fundamentals
+              </p>
+            </div>
+
+            <div class="div-for-education">
+              <h3 class="text-color">
+                <i class="fa-brands fa-free-code-camp"></i>freeCodeCamp.com
+              </h3>
+              <span><i class="fa fa-calendar-days"></i>Certified</span>
+              <p>800 hours spent</p>
+              <p>Three Projects completed</p>
+            </div>
+
+            <div class="div-for-education">
+              <h3 class="text-color">
+                <i class="fa fa-university"></i>National Open University of
+                Nigeria
+              </h3>
+              <span><i class="fa fa-calendar-days"></i>2021 - Current</span>
+              <p>Bachelor's Degree in Computer Science</p>
+            </div>
+
+            <div class="div-for-education">
+              <h3 class="text-color">
+                <i class="fa fa-graduation-cap"></i>HarvardeX - Free Online
+                Classes
+              </h3>
+              <span><i class="fa fa-calendar-days"></i>2021 - Current</span>
+              <p>CS50's: Introduction to Computer Science</p>
+              <p>CS50's: Programming with Python and JavaScript</p>
+              <p>CS50's: Programming with Python</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container-for-footer-social-media">
+        <p><span>Find</span> me <span>on</span> social <span>media</span>:</p>
+        <ul class="footer-social-wrapper">
+          <li>
+            <a href="#here"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#here"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#here"><i class="fa-brands fa-whatsapp"></i></a>
+          </li>
+          <li>
+            <a href="#here"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#here"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p>Copyright: w3sc Design</p>
+      <p style="font-size: 1.2em; font-weight: bold">
+        <span>Cloned</span> by
+        <span>Jaydroid</span>
+      </p>
+      <p>Since <span id="date-insertion"></span></p>
+    </footer>
+
+    <script src="sandbox.js"></script>
+  </body>
+</html>

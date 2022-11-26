@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <script
+      src="https://kit.fontawesome.com/fbc1092ab7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css"
+    />
+    <script src="./jquery-3.6.1.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="page-logo">
+        <a href="#"
+          ><img src="AA_logo.png" alt="page logo" /><span>Alpha-Algo</span></a
+        >
+      </div>
+
+      <!-- <div id="for-nav-and-contact"> -->
+      <nav class="header-nav hide-this">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+        </ul>
+      </nav>
+
+      <div class="container-for-contact hide-this">
+        <button>Contact Me</button>
+
+        <div class="big-contact-icons">
+          <a href="tel:+234-808-121-9906" target="_self"
+            ><i class="fa fa-phone"></i
+            ><span class="tiny-tooltip">Call Me</span></a
+          >
+          <a href="mailto:okayode986@stu.ui.edu.ng" target="_blank"
+            ><i class="fa fa-envelope"></i
+            ><span class="tiny-tooltip">Email Me</span></a
+          >
+          <a href="https://www.fiverr.com/kayodeoluwajuwo" target="_blank"
+            ><i class="fa-brands fa-f"></i
+            ><span class="tiny-tooltip">fiverr</span></a
+          >
+          <a
+            href="https://linkedin.com/in/oluwajuwon-kayode-620a50209"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+            ><span class="tiny-tooltip">Hire Me</span></a
+          >
+          <a href="https://github.com/Ola-oluwajuwon" target="_blank"
+            ><i class="fa-brands fa-github"></i
+            ><span class="tiny-tooltip">Collaborate</span></a
+          >
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <div class="container-to-show-nav">
+        <button id="btn-close" onclick="burgerClose()">
+          <span class="open-close-lines line-one"></span>
+          <span class="open-close-lines line-two"></span>
+          <span class="open-close-lines line-three"></span>
+        </button>
+
+        <nav id="small-screen-nav">
+          <ul id="sm-screen-ul">
+            <ul class="inner-segment-ul">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#aboutMe">About Me</a></li>
+            </ul>
+
+            <div class="sm-contact-icons">
+              <a href="tel=+234"><i class="fa fa-phone"></i></a>
+              <a href="mailto:okayode986@stu.ui.edu.ng"
+                ><i class="fa fa-envelope"></i
+              ></a>
+              <a href="https://www.fiverr.com/kayodeoluwajuwo" target="_blank"
+                ><i class="fa-brands fa-f"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/oluwajuwon-kayode-62050209"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Ola-oluwajuwon" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- My Profile Section -->
+      <section class="container-for-first-flex" id="for-first-id">
+        <div class="container-for-easy-flex">
+          <h1>
+            <span class="for-background-clip">Detail-oriented developer</span>
+            <span style="font-size: 0.6em !important"
+              >who brings a creative and solution driven mindset to every
+              project.</span
+            >
+          </h1>
+
+          <p>
+            Call me Jay, and hi. I design web interfaces that incorporate
+            accessibility and user-friendliness that'll in return delight the
+            clients of my clients.
+          </p>
+
+          <div class="free-call-button">
+            <a href="#resume"
+              >My Resume <i class="fa-sharp fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="container-for-profile-image">
+          <div class="empty-container"></div>
+          <img src="./hey_avatar_of_me.png" alt="my photo" />
+        </div>
+      </section>
+
+      <section class="sm-section">
+        <div class="sm-profile">
+          <img src="hey_avatar_of_me.png" alt="" />
+        </div>
+      </section>
+
+      <!-- My Services Section -->
+      <section class="container-for-services" id="services">
+        <h2>Offer these <span class="for-background-clip">services</span></h2>
+        <p>
+          If you want to take your business online, or you want to share your
+          work with the world-- spoiler-- you found him!
+        </p>
+
+        <div class="services-container">
+          <div class="services">
+            <img src="./services logo 1.svg" alt="services-one-svg" />
+            <h3>Website Design</h3>
+            <p>
+              I can provide beautiful, colorful, and pixel-perfect web layouts
+              if you want me to. You wanna see something cool? Request the
+              desktop site if you're on mobile.
+            </p>
+          </div>
+          <div class="services">
+            <img src="./services logo 2.svg" alt="services-two-svg" />
+            <h3>WF Development</h3>
+            <p>
+              Did your UI/UX designer hands-in a perfect web project and you
+              want people who'll be visiting your website to have the same
+              amazing layout smiling back at them? Can I recommend myself? I
+              just did.
+            </p>
+          </div>
+          <div class="services">
+            <img src="./services logo 3.svg" alt="services-three-svg" />
+            <h3>Web Update</h3>
+            <p>
+              Do you wanna redesign your web layout? Or you wanna make use of
+              the latest tools to increase the performance of your website? Or
+              you just want to update your website banner every now and then to
+              keep things fresh and interesting? Good thing, because I got you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Projects Section -->
+      <section class="project-container" id="projects">
+        <h2>Some <span class="for-background-clip">Projects</span></h2>
+        <p id="noble">
+          My hands-on experience include portfolios, landing pages, and
+          reuseable code snippets. Listed few below for you to checkout if you
+          want.
+        </p>
+
+        <div class="grid-for-project-cards">
+          <a href="#goestoprojects" target="_blank">
+            <div class="project-cards">
+              <img src="./project-one.png" alt="images of finished projects" />
+              <div class="to-center-elements">
+                <p><span>Portfolio</span><span>Resume</span></p>
+
+                <p class="view-button">
+                  View Project <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#toproject" target="_blank">
+            <div class="project-cards">
+              <img src="./project-two.png" alt="images of finished projects" />
+
+              <div class="to-center-elements">
+                <p><span>Portfolio</span><span>Photographer</span></p>
+
+                <p class="view-button">
+                  View Project <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#here" target="_blank">
+            <div class="project-cards">
+              <img
+                src="./project-three.png"
+                alt="images of finished projects"
+              />
+
+              <div class="to-center-elements">
+                <p><span>Landing Page</span><span>Prototype</span></p>
+
+                <p class="view-button">
+                  View Project <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#herethere" target="_blank">
+            <div class="project-cards">
+              <img src="./project-four.png" alt="images of finished projects" />
+
+              <div class="to-center-elements">
+                <p><span>Form</span><span>Survey</span></p>
+
+                <p class="view-button">
+                  View Project <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- You could Activate this in future if want -->
+        <!-- <div class="free-call-button" id="center-and-downward">
+          <a href="#here"
+            >View All Projects <i class="fa-sharp fa-solid fa-arrow-right"></i
+          ></a>
+        </div> -->
+      </section>
+
+      <!-- My Working Methology Section Process -->
+      <section
+        class="container-for-first-flex"
+        style="padding-top: 8em; padding-bottom: 8em"
+      >
+        <div
+          id="remove-margin-top"
+          class="container-for-easy-flex"
+          style="margin-top: -10rem"
+        >
+          <h1 style="font-size: 5.5rem" id="shrink-font-in-sm">
+            The Methologies that help my clients to
+            <span class="for-background-clip">2x their revenue</span>
+          </h1>
+
+          <p>
+            I discover these methods working with the latest tools in the tech
+            industry. That's why you can be rest assured, you are in good hands.
+          </p>
+
+          <div class="free-call-button">
+            <a href="tel:+234-808-121-9906"
+              >Book a Call <i class="fa-sharp fa-solid fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div
+          class="container-for-profile-image for-gradient-card"
+          id="remove-hei-by-prof-img-con"
+        >
+          <div class="process-cards">
+            <div class="process-number-cards">
+              <i class="fa-solid fa-1"></i>
+            </div>
+
+            <div class="process-text-cards">
+              <h4>Discover your Problem</h4>
+              <p>
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-cards">
+            <div class="process-number-cards">
+              <i class="fa-solid fa-2"></i>
+            </div>
+
+            <div class="process-text-cards">
+              <h4>Competative market research</h4>
+              <p>
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-cards">
+            <div class="process-number-cards">
+              <i class="fa-solid fa-3"></i>
+            </div>
+
+            <div class="process-text-cards">
+              <h4>User centric design</h4>
+              <p>
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-cards">
+            <div class="process-number-cards">
+              <i class="fa-solid fa-4"></i>
+            </div>
+
+            <div class="process-text-cards">
+              <h4>Final hand-off</h4>
+              <p>
+                Leverage agile frameworks to provide a robust synopsis for high
+                level overviews.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The About Me Section -->
+      <section id="aboutMe">
+        <article class="text-art" id="resume">
+          <div class="author-name">
+            <h2>Kayode Oluwajuwon</h2>
+          </div>
+
+          <div class="author-bio">
+            <div class="about-me-parag">
+              <p>
+                <b>Bio:</b
+                ><span style="display: block">
+                  Detail-oriented Front End Developer who brings a creative and
+                  solution driven mindset to every project. Designs interfaces
+                  that incorporate accessibility and user-friendliness. Highly
+                  adept at both independent and collaborative projects and
+                  approaches all new projects with the priorities of simplicity
+                  and functionality.</span
+                >
+              </p>
+
+              <p>
+                <b>Certification:</b
+                ><span style="display: block"
+                  >Software Engineering from
+                  <b><i>ALX Africa Software Engineering Programme</i></b></span
+                >
+                <br />
+                <b>Other Qualifications:</b
+                ><span style="display: block; text-align: left"
+                  >Passed w3schools Front End Developer test.</span
+                >
+                <span style="display: block; text-align: left"
+                  >Passed freeCodeCamp Front End Developer tests and
+                  projects.</span
+                >
+              </p>
+            </div>
+
+            <div class="author-experience">
+              <div class="experience-container">
+                <h3>15+</h3>
+                <p>Projects Done</p>
+              </div>
+
+              <div class="experience-container">
+                <h3>2.5+</h3>
+                <p>Years of Experience</p>
+              </div>
+
+              <div class="experience-container">
+                <h3>5+</h3>
+                <p>Projects Deployed</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="photo-art">
+          <h2>My Gallery</h2>
+
+          <div class="image-gallery" id="experience-section">
+            <div class="each-img">
+              <div class="star small left"></div>
+              <div class="star up big-star"></div>
+              <div class="star small right"></div>
+
+              <img src="aloha_avatar_of_me.png" alt="An avatar of me" />
+
+              <div class="image-left-ribbon"></div>
+              <div class="image-right-ribbon"></div>
+            </div>
+
+            <div class="each-img">
+              <div class="star small left"></div>
+              <div class="star up big-star"></div>
+              <div class="star small right"></div>
+              <img src="hey_avatar_of_me.png" alt="An avatar of me" />
+
+              <div class="image-left-ribbon"></div>
+              <div class="image-right-ribbon"></div>
+            </div>
+
+            <div class="each-img">
+              <div class="star small left"></div>
+              <div class="star up big-star"></div>
+              <div class="star small right"></div>
+              <img src="hi_avatar_of_me.png" alt="An avatar of me" />
+
+              <div class="image-left-ribbon"></div>
+              <div class="image-right-ribbon"></div>
+            </div>
+            <!-- <img
+              src="./peakpx.jpg"
+              alt="Photo of a Programmer from My Gallery"
+            />
+            <img
+              src="./peakpx1.jpg"
+              alt="Another Photo of a Programmer from My Gallery"
+            />
+            <img
+              src="./peakpx4.jpg"
+              alt="Photo of a beautiful blue flower from My Gallery"
+            />
+            <img
+              src="./avatar_g2.jpg"
+              alt="My Profile Avatar is also in My Gallery"
+            /> -->
+          </div>
+        </article>
+      </section>
+
+      <!-- The Hire Me Section -->
+      <section class="hire-me">
+        <h2>
+          Have projects in mind? <br />
+          <span class="for-background-clip">Let's make it happen</span>
+        </h2>
+        <p>
+          I'm delighted you've come this far. It probably means you're well
+          taken by it already. We can make your own projects get real too. I'd
+          like to thank you for your time. It means a lot. I'll now leave you to
+          a bunch of links and buttons down there because I believe you now know
+          how to get me, if that's what you want.
+        </p>
+
+        <div id="call-button-centered">
+          <div class="free-call-button" id="call-button-centered">
+            <a href="tel:+234-808-121-9906"
+              >Book a Call <i class="fa-sharp fa-solid fa-phone"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Starts Here -->
+      <footer class="footer">
+        <div class="flex-footer">
+          <div class="contact-handle">
+            <a
+              href="mailto:okayode986@stu.ui.edu.ng"
+              class="view-button"
+              style="text-transform: lowercase"
+            >
+              <i class="fa-solid fa-envelope"></i>okayode986@stu.ui.edu.ng
+            </a>
+
+            <a href="tel:+234-808-121-9906" class="view-button">
+              <i class="fa-solid fa-phone"></i>+234-808-121-9906
+            </a>
+          </div>
+
+          <div class="right-div">
+            <aside>
+              <h3>Route</h3>
+              <p><a href="#home">Home</a></p>
+              <p><a href="#services">Services</a></p>
+              <p><a href="#projects">Projects</a></p>
+              <p><a href="#aboutMe">About Me</a></p>
+            </aside>
+
+            <aside id="bg-socials">
+              <h3>Social</h3>
+              <p>
+                <a href="https://www.fiverr.com/kayodeoluwajuwo" target="_blank"
+                  >Fiverr</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/oluwajuwon-kayode-62050209"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/Ola-oluwajuwon" target="_blank"
+                  >GitHub</a
+                >
+              </p>
+              <p>
+                <a href="https://twitter.com/KayodeJuwon2" target="_blank"
+                  >Twitter</a
+                >
+              </p>
+            </aside>
+
+            <!-- Show these Icons on Small Devices -->
+            <aside id="sm-social-icons">
+              <h3>Social</h3>
+
+              <div class="flex-social-container">
+                <p class="glowing-icons">
+                  <a
+                    href="https://www.fiverr.com/kayodeoluwajuwo"
+                    target="_blank"
+                    ><span>Fiverr Icon</span><i class="fa fa-brands fa-f"></i
+                  ></a>
+                </p>
+
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/oluwajuwon-kayode-62050209"
+                    target="_blank"
+                    ><span>LinkedIn Icon</span
+                    ><i class="fa fa-brands fa-linkedin"></i
+                  ></a>
+                </p>
+
+                <p>
+                  <a href="https://github.com/Ola-oluwajuwon" target="_blank"
+                    ><span>GitHub Icon</span
+                    ><i class="fa fa-brands fa-github"></i
+                  ></a>
+                </p>
+
+                <p>
+                  <a href="https://twitter.com/KayodeJuwon2" target="_blank"
+                    ><span>Twitter Icon</span
+                    ><i class="fa fa-brands fa-twitter"></i
+                  ></a>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+
+        <div class="copyright-div">
+          <div id="for-margin">
+            <p>
+              Courtesy:
+              <a
+                href="https://fontawesome.com/icons"
+                target="_blank"
+                style="text-decoration: underline"
+                >Font Awesome</a
+              >
+              and
+              <a
+                href="https://fonts.google.com"
+                target="_blank"
+                style="text-decoration: underline"
+                >Google Fonts</a
+              >
+            </p>
+            <p>All Rights Reserved.</p>
+            <p>Jaydroid. Since 2022</p>
+          </div>
+
+          <div class="free-call-button" id="backup-button">
+            <a href="#"
+              >Back to Top <i class="fa-sharp fa-solid fa-arrow-up"></i
+            ></a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
