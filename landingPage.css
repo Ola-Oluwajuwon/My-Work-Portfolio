@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+.big-background-container {
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 3em 2em;
+  background: linear-gradient(
+      90deg,
+      rgba(52, 134, 255, 0.4),
+      rgba(241, 25, 134, 0.8)
+    ),
+    url("peakpx.jpg");
+  background-blend-mode: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container-for-text {
+  width: 60vw;
+}
+.container-for-text h1 {
+  font-size: 4rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 1.2rem;
+}
+.container-for-text p:nth-of-type(1) {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.container-for-text p:nth-of-type(3) {
+  font-size: 2.4rem;
+  margin-bottom: 2em;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Style the Hire me button */
+#only-button {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #000;
+  transition: all 0.5s;
+}
+#only-button:hover {
+  cursor: pointer;
+  background: #0071f2;
+  color: #fff;
+}
+
+.container-for-image img {
+  position: relative;
+  display: block;
+  width: 40vw;
+  height: 38vw;
+  padding: 3px;
+  z-index: 99993;
+}
+
+/* .wave {
+  position: absolute;
+  left: 0;
+  bottom: -4vh;
+  z-index: 1;
+   background-color: red;
+} */
+.custom-shape-divider-bottom-1665321584 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1665321584 svg {
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 180px;
+}
+
+.custom-shape-divider-bottom-1665321584 .shape-fill {
+  fill: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  .big-background-container {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: initial;
+    height: 100%;
+  }
+  .container-for-text {
+    width: 90vw;
+    text-align: justify;
+    margin: 2rem auto;
+  }
+  .container-for-image img {
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    z-index: 1;
+    border: none;
+  }
+  .wave {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+    .container-for-image img {
+        width: 100vw;
+        height: 70vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 340px) {
+    * {
+       word-wrap: break-word;
+    }
+    * .container-for-text > h1 {
+        word-wrap: normal;
+        font-size: 2em;
+    }
+    
+    .container-for-text p:nth-of-type(3) {
+        font-size: initial;
+    }
+    
+    .container-for-text p:nth-of-type(1) {
+        font-size: initial;
+    }
+}
+
+
