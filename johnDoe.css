@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: "Fauna One" serif; ---Import this font later */
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  transition: all 2s;
+}
+h1,
+h2,
+h3 {
+  /* font-family: Cinzel serif; ---Import this font later */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Style the Header */
+header {
+  background: #444;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+}
+.style-head-nav-bar ul {
+  list-style: none;
+}
+.style-head-nav-bar a {
+  color: #eee;
+  text-decoration: none;
+}
+a,
+button {
+  transition: all 0.8s;
+}
+a:hover,
+button:hover {
+  opacity: 0.5;
+}
+.style-head-nav-bar i {
+  display: block;
+  margin-top: 2.5rem;
+}
+
+.page-logo img {
+  display: inline-block;
+  width: 100%;
+  opacity: 0.5;
+}
+
+/* Styles for Page Modal Starts Here */
+.container-page-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 9999999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+
+  display: none;
+}
+.container-page-modal.active {
+  display: flex;
+}
+
+.modal-content {
+  width: 800px;
+  height: 400px;
+  color: #fff;
+  font-size: 2rem;
+  background: crimson;
+  padding: 0 4.3rem;
+  border-radius: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+.modal-content h2 {
+  text-align: center;
+}
+.modal-content > button {
+  font-size: 2rem;
+  color: crimson;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+.modal-content > button:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+/* Styles for Page Modal Ends Here */
+
+/* Style the Main and Footer Elements to make go to the right of the fixed Header */
+main,
+footer {
+  width: 90%;
+  margin-left: auto;
+  background: #000;
+  font-size: 1.4rem;
+  padding: 0 2rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Style page banner text and image */
+.intro {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.intro h1 {
+  font-size: 6rem;
+  font-weight: lighter;
+  word-spacing: 1rem;
+}
+.intro img {
+  display: block;
+  width: 100%;
+}
+
+/* Style the About Me Section */
+.article-a,
+.article-b,
+.article-c,
+.article-d,
+.article-e,
+.article-f {
+  margin-top: 4rem;
+}
+
+.article-a h2::after,
+.article-b h2::after,
+.article-c h2::after,
+.article-d h2::after,
+.article-e h2::after,
+.article-f h2::after {
+  display: block;
+  content: "";
+  margin: 1rem 0;
+  width: 15%;
+  border-bottom: 2px solid gray;
+}
+
+.article-a p {
+  text-align: justify;
+}
+
+/* Style .article-b ----My Skills Article */
+.article-b .empty-container {
+  width: 90%;
+  height: 5vh;
+  background: #eee;
+  border: 0.2rem solid #777;
+  margin-bottom: 2rem;
+  margin-top: 0.4rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2rem;
+  padding-right: 0.2em;
+}
+.article-b .empty-container.first::after {
+  display: block;
+  content: "";
+  width: 90%;
+  height: 100%;
+  background: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.article-b .empty-container.second::after {
+  display: block;
+  content: "";
+  width: 85%;
+  height: 100%;
+  background: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.article-b .empty-container.third::after {
+  display: block;
+  content: "";
+  width: 80%;
+  height: 100%;
+  background: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.empty-container > p {
+  color: #233;
+  position: relative;
+  z-index: 99999;
+  font-size: 2rem;
+}
+.container-for-projects {
+  padding: 2rem 0;
+  font-weight: bold;
+  color: #444;
+  background: #eee;
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-for-projects p span {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+}
+.article-b button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+}
+.article-b button i {
+  margin-right: 0.4rem;
+}
+
+/* Style the Div Elements in .article-c */
+.article-c .bigger-container-for-price {
+  margin-top: 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+.article-c .container-for-price {
+  width: 40%;
+  line-height: 3rem;
+  text-align: center;
+  border: 0.2rem inset #eee;
+  opacity: 0.7;
+  transition: opacity 0.8s;
+}
+.article-c .container-for-price:hover {
+  opacity: 1;
+}
+.container-for-price h3 {
+  background: #444;
+  font-weight: lighter;
+  padding: 1rem 0;
+  border: 0.1rem outset #eee;
+}
+.container-for-price p {
+  background: #777;
+  padding: 0.2rem 0;
+  border: 0.1rem outset #eee;
+}
+.container-for-price p > a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(146, 146, 146, 0.8);
+  border-radius: 0.4rem;
+}
+.container-for-price span {
+  display: block;
+  font-size: 3rem;
+}
+
+/* Style .article-d ----My Reputation Article */
+.container-for-reputation {
+  display: flex;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  margin-top: 2.5rem;
+}
+.container-for-reputation img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.container-for-two-p {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hide-in-small-screens {
+  text-align: justify;
+}
+.article-d button,
+.article-e button {
+  padding: 1.2rem 4rem;
+  font-size: 1.4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style .article-e ----My Photo Article */
+.bigger-container-for-img-gallery {
+  margin-top: 2rem;
+  display: flex;
+  max-width: 100%;
+  margin: 3rem auto;
+}
+.container-for-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+/* Style .article-f ----My Contact Article */
+.article-f > p {
+  margin-bottom: 1.8rem;
+}
+.container-for-form {
+  width: 50%;
+  margin: 0 auto;
+}
+.article-f input {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.article-f button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* Style the Footer */
+footer {
+  padding-top: 4rem;
+  text-align: center;
+  line-height: 2.4rem;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer a {
+  color: #eee;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 600px) {
+  /* MQ for the Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    padding: 2.8rem 0;
+    transition: all 0.8s;
+  }
+  /* MQ for Header Logo and the Icons */
+  header .page-logo,
+  header .style-head-nav-bar i {
+    display: none;
+  }
+  header nav {
+    width: 100%;
+  }
+  .style-head-nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    transition: all 1s;
+  }
+  /* MQ for Full Width of the body of the page */
+  main {
+    margin-top: 4vh;
+    transition: all 1s;
+  }
+  main,
+  footer {
+    width: 100%;
+    transition: all 1s;
+  }
+
+  /* Media Queries */
+  .modal-content {
+    width: 95%;
+    height: 90vh;
+    font-size: 1.4em;
+    padding: 2rem 1.2rem;
+  }
+
+  .modal-content > button {
+    font-size: 1.4em;
+    padding: 1rem 2rem;
+  }
+
+  /* MQ for My Skills article */
+  .container-for-projects {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 65vh;
+    transition: all 1s;
+  }
+  /* MQ for the .article-c ---My Price Article */
+  .bigger-container-for-price {
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    transition: all 1s;
+  }
+  /* MQ for Children Containers inside .article-c */
+  .article-c .container-for-price {
+    width: 80vw;
+    margin: 0 auto;
+    line-height: 4rem;
+    transition: all 1s;
+  }
+  /* MQ to hide the third-long Paragraph in My Reputation article */
+  .hide-in-small-screens {
+    display: none;
+    transition: all 1s;
+  }
+  /* MQ for My Photos article */
+  .bigger-container-for-img-gallery {
+    flex-direction: column;
+    transition: all 1s;
+  }
+  .article-e .container-for-photos {
+    max-width: 80vw;
+    margin: 2rem auto;
+    transition: all 1s;
+  }
+
+   /* MQ for My Form */
+   .container-for-form {
+    width: 70%;
+   }
+
+}
+
+
+@media screen and (max-width: 420px) {
+     /* MQ for My Form */
+  .container-for-form {
+    width: 100%;
+  }
+  .container-for-form button {
+    font-size: 1.2rem;
+  }
+
+     /* MQ for My Photos article */
+  .article-e .container-for-photos img {
+    max-height: 300px;
+  }
+
+  .style-head-nav-bar ul {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
